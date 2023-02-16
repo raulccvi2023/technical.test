@@ -62,7 +62,7 @@ namespace technical.test.Repository
             {
                 string query = string.Format(@"insert into planet
                                 (id ,climate ,diameter,gravity,name,population,residents,terrain,url)
-                                values ({0} ,'{1}' ,'{1}' ,'{1}' ,'{1}' ,'{1}' ,'{1}' ,'{1}' ,'{1}')",
+                                values ({0} ,'{1}' ,'{2}' ,'{3}' ,'{4}' ,'{5}' ,'{6}' ,'{7}' ,'{8}')",
                                 entity.id, entity.climate, entity.diameter, entity.gravity, entity.name,
                                 entity.population, string.Empty, entity.terrain, entity.url);
                 SqlCommand cmd = new SqlCommand(query, conn);

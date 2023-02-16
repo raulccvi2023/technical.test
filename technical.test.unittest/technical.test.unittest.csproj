@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\technical.test\technical.test.csproj" />
+    <ProjectReference Include="..\technical.test\technical.test.api.csproj" />
   </ItemGroup>
 
 </Project>
