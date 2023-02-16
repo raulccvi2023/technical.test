@@ -1,0 +1,31 @@
+﻿
+
+create table people
+(
+	id int not null primary key,
+	name  varchar(50) null,
+    birth_year varchar(50) null,
+    eye_color varchar(50) null,
+    gender varchar(50) null,
+    hair_color varchar(50) null,
+    height varchar(50) null,
+    homeworld varchar(50) null,
+    mass varchar(50) null,
+    skin_color varchar(50) null,
+    created varchar(50) null,
+    edited varchar(50) null,
+    url varchar(50) null       
+);
+
+create table planet
+(
+	id int not null primary key,
+	climate varchar(50) null,
+	diameter varchar(50) null,
+	gravity varchar(50) null,
+	name varchar(50) null,
+	population varchar(50) null,
+	residents varchar(50) null,
+	terrain varchar(50) null,
+	url varchar(50) null
+);
