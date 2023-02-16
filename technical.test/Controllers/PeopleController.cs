@@ -14,13 +14,12 @@ namespace technical.test.Controllers
     [Route("api/[controller]")]
     public class PeopleController : ControllerBase
     {
-        private readonly ILogger<PeopleController> _logger;
-        public PeopleController(ILogger<PeopleController> logger)
+        IGeneralService service;
+            
+        public PeopleController(IGeneralService service)
         {
-            _logger = logger;
+            this.service = service;
         }
-
-        GeneralService service = new GeneralService();
 
         /// <summary>
         /// API: List people with a limit

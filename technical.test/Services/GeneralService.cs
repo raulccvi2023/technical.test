@@ -8,7 +8,7 @@ using technical.test.Repository;
 
 namespace technical.test.Services
 {
-    public class GeneralService
+    public  class GeneralService : IGeneralService
     {
         SwapiService swapiService = new SwapiService();
 
@@ -21,7 +21,7 @@ namespace technical.test.Services
             _logger = loggerFactory.CreateLogger<GeneralService>();
         }
 
-        public List<People> ListPeople(int? limit)
+        public virtual List<People> ListPeople(int? limit)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace technical.test.Services
             }
         }
 
-        public People GetPeople(int id)
+        public virtual People GetPeople(int id)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace technical.test.Services
             }
         }
 
-        public List<Planet> ListPlanet(int? limit)
+        public virtual List<Planet> ListPlanet(int? limit)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace technical.test.Services
             }
         }
 
-        public Planet GetPlanet(int id)
+        public virtual Planet GetPlanet(int id)
         {
             try
             {

@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using technical.test.Services;
 
 namespace technical.test
 {
@@ -32,6 +33,8 @@ namespace technical.test
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "technical.test", Version = "v1" });
             });
+
+            services.AddScoped<IGeneralService, GeneralService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

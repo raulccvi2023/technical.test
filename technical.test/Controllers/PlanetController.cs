@@ -14,13 +14,12 @@ namespace technical.test.Controllers
     [Route("api/[controller]")]
     public class PlanetController : ControllerBase
     {
-        private readonly ILogger<PlanetController> _logger;
-        public PlanetController(ILogger<PlanetController> logger)
-        {
-            _logger = logger;
-        }
+        IGeneralService service;
 
-        GeneralService service = new GeneralService();
+        public PlanetController(IGeneralService service)
+        {
+            this.service = service;
+        }
 
         /// <summary>
         /// API: List planetes
